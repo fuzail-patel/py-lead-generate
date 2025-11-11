@@ -1,0 +1,22 @@
+meta {
+  name: Generate outreach email or content
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{baseUrl}}/api/generate
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "topic": "",
+    "mode": "",
+    "recipient_name": "",
+    "sender_company_summary": "",
+    "sender_info": "",
+    "max_results": ""
+  }
+}

@@ -1,0 +1,15 @@
+# Core dependencies
+requests[socks]>=2.31.0  # Changed from requests>=2.31.0
+python-dotenv>=1.0.0
+openai>=1.3.0
+beautifulsoup4>=4.12.0
+lxml>=4.9.0
+urllib3>=2.0.0
+
+# API dependencies
+fastapi>=0.104.0
+uvicorn[standard]>=0.24.0
+pydantic>=2.0.0
+
+# Optional dependencies
+# duckduckgo-search>=3.9.0

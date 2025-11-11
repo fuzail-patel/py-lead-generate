@@ -1,0 +1,86 @@
+ip,port,country,city,isp,response_time_ms,status,tested_at
+37.221.193.221,29195,Germany,Nuremberg,netcup GmbH,6347.11,working,2025-11-10 10:42:29
+37.221.193.221,47767,Germany,Nuremberg,netcup GmbH,7036.59,working,2025-11-10 10:44:22
+37.221.193.221,10380,Germany,Nuremberg,netcup GmbH,7248.57,working,2025-11-10 10:50:51
+37.221.193.221,12931,Germany,Nuremberg,netcup GmbH,7789.22,working,2025-11-10 10:49:04
+37.221.193.221,50955,Germany,Nuremberg,netcup GmbH,8374.78,working,2025-11-10 10:50:01
+198.8.94.174,39078,United States,Atlanta,Performive LLC,8441.16,working,2025-11-10 10:44:33
+37.221.193.221,20499,Germany,Nuremberg,netcup GmbH,8776.92,working,2025-11-10 10:42:18
+206.220.175.2,4145,United States,Los Angeles,Performive LLC,8793.96,working,2025-11-10 10:47:17
+98.181.137.83,4145,United States,Las Vegas,Cox Communications Inc.,8848.06,working,2025-11-10 10:43:15
+192.252.215.5,16137,United States,Atlanta,Performive LLC,9212.74,working,2025-11-10 10:48:24
+184.181.217.213,4145,United States,Pensacola,Cox Communications Inc.,9413.3,working,2025-11-10 10:50:17
+68.71.254.6,4145,United States,Beverly Hills,Total Server Solutions L.L.C.,9427.83,working,2025-11-10 10:47:57
+68.71.247.130,4145,United States,Los Angeles,Total Server Solutions L.L.C.,9763.33,working,2025-11-10 10:51:05
+98.181.137.80,4145,Unknown,Unknown,Unknown,9852.75,working,2025-11-10 10:44:13
+72.37.216.68,4145,United States,Beverly Hills,Performive LLC,9989.44,working,2025-11-10 10:44:48
+184.181.217.210,4145,United States,Pensacola,Cox Communications Inc.,10080.1,working,2025-11-10 10:46:59
+199.102.104.70,4145,United States,Beverly Hills,Performive LLC,10151.3,working,2025-11-10 10:41:45
+72.195.114.169,4145,United States,Irvine,Cox Communications Inc.,10315.25,working,2025-11-10 10:44:15
+142.54.235.9,4145,United States,Los Angeles,Performive LLC,10365.81,failed,2025-11-10 10:50:38
+184.178.172.14,4145,Unknown,Unknown,Unknown,10654.24,working,2025-11-10 10:41:02
+192.252.220.92,17328,United States,Los Angeles,Performive LLC,10773.56,working,2025-11-10 10:42:51
+184.178.172.3,4145,United States,Roanoke,Cox Communications Inc.,10916.17,working,2025-11-10 10:49:14
+192.252.208.67,14287,United States,Atlanta,Performive LLC,10949.71,working,2025-11-10 10:40:32
+192.252.216.81,4145,United States,Atlanta,Performive LLC,11157.4,working,2025-11-10 10:42:26
+192.111.137.37,18762,United States,Atlanta,Total Server Solutions L.L.C.,11249.11,working,2025-11-10 10:50:07
+68.71.249.153,48606,United States,Los Angeles,Performive LLC,11516.01,working,2025-11-10 10:50:50
+199.102.107.145,4145,Unknown,Unknown,Unknown,11771.99,working,2025-11-10 10:43:19
+142.54.231.38,4145,United States,Los Angeles,Performive LLC,11890.78,working,2025-11-10 10:47:40
+192.111.138.29,4145,United States,Atlanta,Total Server Solutions L.L.C.,11930.9,working,2025-11-10 10:46:23
+98.170.57.231,4145,United States,Atlanta,Cox Communications Inc.,12061.78,working,2025-11-10 10:41:42
+184.178.172.17,4145,United States,Roanoke,Cox Communications Inc.,12231.47,working,2025-11-10 10:44:33
+184.178.172.28,15294,United States,Roanoke,Cox Communications Inc.,12268.62,working,2025-11-10 10:43:30
+98.178.72.21,10919,United States,Pensacola,Cox Communications Inc.,12305.37,working,2025-11-10 10:50:08
+98.175.31.195,4145,United States,Norfolk,Cox Communications Inc.,12599.35,working,2025-11-10 10:45:13
+142.54.229.249,4145,United States,Los Angeles,Performive LLC,13262.53,working,2025-11-10 10:49:37
+72.195.34.58,4145,United States,Irvine,Cox Communications Inc.,13344.26,working,2025-11-10 10:40:44
+192.252.208.70,14282,United States,Atlanta,Performive LLC,13657.72,working,2025-11-10 10:47:55
+174.77.111.197,4145,United States,Pensacola,Cox Communications Inc.,14038.54,working,2025-11-10 10:40:41
+192.111.134.10,4145,United States,Los Angeles,Performive LLC,14192.39,working,2025-11-10 10:46:36
+70.166.167.55,57745,United States,Pensacola,Cox Communications Inc.,14288.93,working,2025-11-10 10:42:32
+74.119.144.60,4145,United States,Atlanta,Total Server Solutions L.L.C.,14420.32,working,2025-11-10 10:47:03
+192.111.137.34,18765,United States,Atlanta,Total Server Solutions L.L.C.,14560.31,working,2025-11-10 10:40:54
+184.178.172.5,15303,United States,Roanoke,Cox Communications Inc.,14838.64,working,2025-11-10 10:46:25
+72.195.34.59,4145,United States,Irvine,Cox Communications Inc.,14853.0,working,2025-11-10 10:47:16
+184.178.172.13,15311,United States,Roanoke,Cox Communications Inc.,14863.67,working,2025-11-10 10:50:37
+104.37.135.145,4145,United States,Los Angeles,Performive LLC,14944.79,working,2025-11-10 10:41:10
+98.188.47.150,4145,United States,Pensacola,Cox Communications Inc.,15003.91,working,2025-11-10 10:43:43
+174.77.111.196,4145,United States,Pensacola,Cox Communications Inc.,15234.23,working,2025-11-10 10:50:31
+67.201.59.70,4145,United States,El Segundo,PacketExchange,15446.86,working,2025-11-10 10:42:34
+199.102.105.242,4145,Unknown,Unknown,Unknown,15534.65,working,2025-11-10 10:46:08
+142.54.239.1,4145,United States,Los Angeles,Performive LLC,15607.74,working,2025-11-10 10:45:31
+192.111.130.2,4145,United States,Atlanta,Performive LLC,15626.85,working,2025-11-10 10:49:27
+192.111.139.165,4145,United States,Atlanta,Performive LLC,16300.25,working,2025-11-10 10:41:18
+184.181.217.201,4145,United States,Pensacola,Cox Communications Inc.,16467.1,working,2025-11-10 10:51:06
+192.111.129.150,4145,Unknown,Unknown,Unknown,16587.49,working,2025-11-10 10:41:14
+199.229.254.129,4145,United States,Atlanta,Performive LLC,16732.31,working,2025-11-10 10:46:24
+72.195.34.41,4145,United States,Irvine,Cox Communications Inc.,16775.01,working,2025-11-10 10:44:13
+67.201.58.190,4145,United States,Tulsa,PacketExchange,17122.1,working,2025-11-10 10:41:38
+184.181.217.194,4145,Unknown,Unknown,Unknown,17169.21,working,2025-11-10 10:46:37
+98.188.47.132,4145,United States,Pensacola,Cox Communications Inc.,17284.32,working,2025-11-10 10:46:44
+68.1.210.163,4145,United States,San Diego,Cox Communications Inc.,18096.38,working,2025-11-10 10:48:59
+192.111.130.5,17002,United States,Atlanta,Performive LLC,18164.52,working,2025-11-10 10:47:47
+192.111.139.163,19404,United States,Atlanta,Performive LLC,18219.4,working,2025-11-10 10:50:52
+192.111.137.35,4145,Unknown,Unknown,Unknown,18283.0,working,2025-11-10 10:51:28
+68.1.210.189,4145,United States,San Diego,Cox Communications Inc.,18702.7,working,2025-11-10 10:50:41
+184.181.217.206,4145,United States,Pensacola,Cox Communications Inc.,18963.46,working,2025-11-10 10:48:28
+184.178.172.26,4145,United States,Roanoke,Cox Communications Inc.,19803.25,working,2025-11-10 10:47:17
+72.195.34.42,4145,United States,Irvine,Cox Communications Inc.,19902.21,working,2025-11-10 10:47:33
+142.54.236.97,4145,United States,Los Angeles,Performive LLC,21044.22,working,2025-11-10 10:42:24
+199.116.114.11,4145,United States,Los Angeles,Performive LLC,22135.07,working,2025-11-10 10:51:28
+184.178.172.23,4145,United States,Roanoke,Cox Communications Inc.,22265.08,working,2025-11-10 10:42:08
+199.58.184.97,4145,United States,Atlanta,Performive LLC,22465.88,working,2025-11-10 10:43:46
+107.181.168.145,4145,Unknown,Unknown,Unknown,22509.94,working,2025-11-10 10:45:26
+74.119.147.209,4145,Unknown,Unknown,Unknown,22930.44,working,2025-11-10 10:47:31
+174.77.111.198,49547,United States,Pensacola,Cox Communications Inc.,23483.28,working,2025-11-10 10:42:54
+184.170.248.5,4145,United States,Atlanta,Performive LLC,23787.24,working,2025-11-10 10:49:56
+199.58.185.9,4145,United States,Atlanta,Performive LLC,24330.77,working,2025-11-10 10:46:02
+192.252.209.155,14455,United States,Atlanta,Performive LLC,24406.46,working,2025-11-10 10:52:00
+192.111.139.162,4145,United States,Atlanta,Performive LLC,24431.1,working,2025-11-10 10:46:38
+98.170.57.249,4145,Unknown,Unknown,Unknown,24577.69,working,2025-11-10 10:46:10
+67.201.33.10,25283,United States,Florence-Graham,PacketExchange,25123.85,working,2025-11-10 10:48:41
+104.200.152.30,4145,United States,Los Angeles,Performive LLC,25768.97,working,2025-11-10 10:48:17
+72.195.114.184,4145,United States,Irvine,Cox Communications Inc.,26112.67,working,2025-11-10 10:48:28
+107.181.161.81,4145,Unknown,Unknown,Unknown,26813.22,working,2025-11-10 10:47:40
+192.252.214.20,15864,United States,Atlanta,Performive LLC,30833.31,working,2025-11-10 10:52:24

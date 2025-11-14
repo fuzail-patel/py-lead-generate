@@ -5,11 +5,12 @@ from modules.exceptions.exceptions import (
     SearchFailedError,
     LLMProcessingError,
     SearchBlockedError,
-    ProxyFailureError
+    ProxyFailureError,
 )
 
 # disable insecure request warnings
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
+
 
 def run_workflow(
     topic: str,
@@ -17,13 +18,14 @@ def run_workflow(
     recipient_name: str = "Dr. Smith",
     sender_company_summary: str = "",
     sender_info: dict = {},
-    max_results: int = 5
+    max_results: int = 5,
+    html=False,
 ):
     """
     Executes the workflow and returns results as a structured dictionary.
     Handles common workflow errors gracefully.
     """
-    
+
     wf = WorkflowFacade()
     wf.email.set_email_config(**sender_info)
 
@@ -39,7 +41,8 @@ def run_workflow(
             mode=mode,
             max_results=max_results,
             receipient_name=recipient_name,
-            sender_company_summary=sender_company_summary
+            sender_company_summary=sender_company_summary,
+            html=html
         )
 
         # return structured result
@@ -58,7 +61,7 @@ def run_workflow(
             "error_type": "ProxyFailureError",
             "message": str(e),
             "topic": topic,
-            "is_infrastructure_error": True  # Flag to indicate this is not a lead issue
+            "is_infrastructure_error": True,  # Flag to indicate this is not a lead issue
         }
 
     except InsufficientContentError as e:
@@ -67,7 +70,7 @@ def run_workflow(
             "error_type": "InsufficientContentError",
             "message": str(e),
             "topic": topic,
-            "is_infrastructure_error": False  # This is a lead/content issue
+            "is_infrastructure_error": False,  # This is a lead/content issue
         }
 
     except SearchFailedError as e:
@@ -75,15 +78,15 @@ def run_workflow(
             "success": False,
             "error_type": "SearchFailedError",
             "message": str(e),
-            "topic": topic
+            "topic": topic,
         }
-        
+
     except SearchBlockedError as e:
         return {
             "success": False,
             "error_type": "SearchBlockedError",
             "message": str(e),
-            "topic": topic
+            "topic": topic,
         }
 
     except LLMProcessingError as e:
@@ -91,7 +94,7 @@ def run_workflow(
             "success": False,
             "error_type": "LLMProcessingError",
             "message": str(e),
-            "topic": topic
+            "topic": topic,
         }
 
     except Exception as e:
@@ -100,5 +103,5 @@ def run_workflow(
             "success": False,
             "error_type": "UnknownError",
             "message": str(e),
-            "topic": topic
+            "topic": topic,
         }

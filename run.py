@@ -27,12 +27,13 @@ def main():
         # 3️⃣ Validate and extract required inputs
         if "topic" not in data:
             raise ValueError("Required field 'topic' missing from input")
-        
+
         topic = data["topic"]
         mode = data.get("mode", "lead")  # Only mode has a sensible default
         recipient_name = data.get("recipient_name", "")
         sender_company_summary = data.get("sender_company_summary", "")
         max_results = int(data.get("max_results", 5))
+        html = data.get("html", False)
 
         # Sender info - must be provided or will use empty values
         sender_info = data.get("sender_info", {})
@@ -45,6 +46,7 @@ def main():
             sender_company_summary=sender_company_summary,
             sender_info=sender_info,
             max_results=max_results,
+            html=html
         )
 
         # prepare payload
@@ -53,7 +55,7 @@ def main():
             # Workflow returned error
             print(json.dumps(result, indent=2))
             return
-            
+
         if mode == "lead":
             payload = {
                 "success": True,
@@ -80,16 +82,20 @@ def main():
                 indent=2,
             )
         )
-        
+
     except json.JSONDecodeError as e:
         # 7️⃣ JSON parsing error
         print(
             json.dumps(
-                {"success": False, "error_type": "JSONError", "message": f"Invalid JSON: {str(e)}"},
+                {
+                    "success": False,
+                    "error_type": "JSONError",
+                    "message": f"Invalid JSON: {str(e)}",
+                },
                 indent=2,
             )
         )
-    
+
     except Exception as e:
         # 8️⃣ Catch-all error handler (to prevent n8n from breaking)
         print(

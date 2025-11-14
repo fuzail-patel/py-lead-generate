@@ -22,6 +22,7 @@ class WorkflowFacade:
         max_results: int = 5,
         receipient_name: str = "",
         sender_company_summary: str = None,
+        html=False,
     ):
         # Step 1: Search
         search_html = self.search.search(topic, mode)
@@ -40,15 +41,12 @@ class WorkflowFacade:
         # Step 5: LLM Processing
         llm_result = None
 
-
         if mode == "lead":
             summary, email_body, subject = self.llm.generate_summary_email(
                 topic, filtered_contents, mode, sender_company_summary, receipient_name
             )
 
-            email_data = self.email.compose_email(
-                receipient_name, subject, email_body
-            )
+            email_data = self.email.compose_email(subject, email_body, html)
 
             llm_result = {
                 "summary": summary,

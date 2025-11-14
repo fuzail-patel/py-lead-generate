@@ -41,7 +41,7 @@ class EmailModule:
         </html>
         """.strip()
 
-    def compose_email(self, recipient_name: str, subject: str = None, email_body: str = None, html: bool = False):
+    def compose_email(self, subject: str = None, email_body: str = None, html: bool = False):
         """Generate a polished outreach email in plain text or HTML.
         
         Note: The email_body should already be complete from the LLM with no placeholders.

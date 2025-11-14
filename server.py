@@ -29,6 +29,7 @@ class GenerateRequest(BaseModel):
     sender_company_summary: Optional[str] = Field("", example="We are a payment integration consultancy that helps businesses optimize their payment workflows", description="Description of YOUR company (the sender) - helps AI write personalized outreach emails mentioning your services. This is NOT about the target company.")
     sender_info: Optional[SenderInfo] = Field(default_factory=SenderInfo, description="Sender information for email signature")
     max_results: Optional[int] = Field(5, ge=1, le=20, example=5, description="Maximum number of search results (1-20)")
+    html: Optional[bool] = Field(False,description="If set to true, return email will be in html format")
 
     @field_validator('topic')
     @classmethod
@@ -73,6 +74,8 @@ async def generate(payload: GenerateRequest):
     - `sender_company_summary`: Description of YOUR company (the sender) - helps AI personalize the email by mentioning your services
     - `sender_info`: Sender information for email signature
     - `max_results`: Number of search results (1-20, default: 5)
+    - `max_results`: Number of search results (1-20, default: 5)
+    - `html`: Format of the retutned html if supported by mode
     
     **Returns:**
     - For 'lead' mode: summary + email (subject + body)
@@ -90,7 +93,8 @@ async def generate(payload: GenerateRequest):
             recipient_name=payload.recipient_name or "",
             sender_company_summary=payload.sender_company_summary or "",
             sender_info=sender_info_dict,
-            max_results=payload.max_results
+            max_results=payload.max_results,
+            html=payload.html
         )
 
         if not result.get("success", True):

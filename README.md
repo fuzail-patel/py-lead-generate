@@ -201,6 +201,7 @@ Only `topic` is required. All other fields are optional.
   "recipient_name": "string (optional)",
   "sender_company_summary": "string (optional)",
   "max_results": "number (optional, default: 5)",
+  "html":true,
   "sender_info": {
     "sender_name": "string (optional)",
     "sender_title": "string (optional)",
